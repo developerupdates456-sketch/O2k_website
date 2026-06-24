@@ -1,0 +1,28 @@
+{
+  "name": "office-2000-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Office 2000 - AV Solutions Website (Cloudflare Pages)",
+  "scripts": {
+    "build": "gulp build-js build-css images",
+    "deploy": "npx wrangler pages deploy public_html --branch main"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-header": "^2.0.9",
+    "postcss-cssnext": "^3.1.1",
+    "postcss-pxtorem": "^6.0.0",
+    "postcss-reporter": "^7.1.0",
+    "postcss-scss": "^4.0.7"
+  }
+}

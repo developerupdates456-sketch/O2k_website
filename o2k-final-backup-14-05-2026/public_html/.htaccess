@@ -1,0 +1,168 @@
+
+
+
+RewriteEngine On
+
+
+# Main site pages
+RewriteRule ^Home$  index.html [L]
+RewriteRule ^o2k$ index1.html [L]
+RewriteRule ^About-us$ whoweare.html [L]
+RewriteRule ^Thank-you$ thank-you.html [L]
+RewriteRule ^Beyonders-centre$ beyonderscentre.html [L]
+RewriteRule ^Crestron-Sightline-Experience$ crestron.html [L]
+RewriteRule ^Our-expertise$ ourexpertise.html [L]
+RewriteRule ^Case-studies$ casestudies.html [L]
+RewriteRule ^News$ news.html [L]
+RewriteRule ^Talk-To-Our-Expert$ talktoourexpert.html [L]
+RewriteRule ^O2Ks-Innovative-AV-Solutions-for-TomTom-INAVATE-APAC-Award-Winner$ casestudies1.html [L]
+RewriteRule ^Elevating-Expectations-O2Ks-Success-in-Creating-Immersive-Lift-Experiences$ casestudies2.html [L]
+RewriteRule ^Meeting-Room-Overhaul-for-World-Renowned-IT-Consultant-Giant$ casestudies3.html [L]
+RewriteRule ^Saving-Lives-Beyond-Medicine-Towards-Meaningful-Patient-Care$ casestudies4.html [L]
+RewriteRule ^The-Beyonders-Centre-India-INACATE-APAC-Award-Winner$ casestudies5.html [L]
+RewriteRule ^Gallery$ gallery.html [L]
+RewriteRule ^Partners$ ourpartners [L]
+RewriteRule ^Careers$ careers.html [L]
+RewriteRule ^Office-2000-Blogs$ blogs.html [L]
+RewriteRule ^AV-Solutions-Blogs$ blogpg1.html [L]
+RewriteRule ^Audio-Visual-Blogs2$ blogpg2.html [L]
+RewriteRule ^Contact-us$ contactus.html [L]
+RewriteRule ^Demo-booking$ demobooking.html [L]
+RewriteRule ^Affiliations$ affiliations.html [L]
+RewriteRule ^Vector-Power-Conditioner$ vector.html [L]
+RewriteRule ^Help-and-support$ helpandsupport.html [L]
+RewriteRule ^Privacy-policy$ privacypolicy.html [L]
+RewriteRule ^Technology-innovations$ technologyinnovations.html [L]
+RewriteRule ^Retail-digital-signage$ retailanddigitalsignage.html [L]
+RewriteRule ^Townhall$ townhall.html [L]
+RewriteRule ^Top-Essential-Video-Solutions-for-Meeting-Rooms$ blog1.html [L]
+RewriteRule ^How-to-Maximize-Efficiency-In-Meeting-Rooms-with-AV-Technology$ blog2.html [L]
+RewriteRule ^The-Avolution-Unveiling-the-Impact-of-AI-on-Audio-Visual-Technologies$ blog3.html [L]
+RewriteRule ^Upgrade-Your-Meeting-Experience-A-Guide-to-the-Top-Microsoft-Teams-Rooms-Equipment$ blog4.html [L]
+RewriteRule ^5-MTR-Accessories-To-Enhance-Your-Meeting-Room-Experience$ blog5.html [L]
+RewriteRule ^4-Audio-Essentials-Every-Meeting-Room-Needs$ blog6.html [L]
+RewriteRule ^6-Must-haves-For-Successful-Hybrid-Meetings-with-Teams-Rooms$ blog7.html [L]
+RewriteRule ^Immerse-Into-Teams-Rooms-the-Effective-Hybrid-Meeting-Solution$ blog8.html [L]
+RewriteRule ^How-To-Drastically-Improve-your-Team-Meetings-with-O2K-and-Team-Rooms$ blog9.html [L]
+RewriteRule ^O2K-Definitive-Guide-to-Planning-Productive-Meetings-with-Microsoft$ blog10.html [L]
+RewriteRule ^Microsoft-Teams-Rooms-The-Hy-breed-Solution-to-Accomplish-More-at-Team-Meetings$ blog11.html [L]
+RewriteRule ^Corporate-Social-Responsibility-Project-by-O2K-for-Wesley-Higher-Secondary-School$ blog12.html [L]
+RewriteRule ^Learn-how-the-all-new-Samsung-Wall-can-elevate-your-meetings!$ blog13.html [L]
+RewriteRule ^Things-to-know-about-the-latest-Microsoft-Teams-Rooms$ blog14.html [L]
+RewriteRule ^Crestron-DM-NVX-AV-Over-IP-Series-Why-is-it-the-Future-in-AV-Integrations$ blog15.html [L]
+RewriteRule ^Everything-You-Need-To-Know-About-Taurus-UCX-The-Future-of-Meeting-Rooms$ blog16.html [L]
+RewriteRule ^Technology-meets-Innovation-as-GoBright-Promises-to-be-the-Future-of-Automation-in-Office-Spaces$ blog17.html [L]
+RewriteRule ^O2K-Partners-with-CYVIZ-to-elevate-Virtual-Collaboration-in-Workspace$ blog18.html [L]
+RewriteRule ^AVIXA-Women-in-AV-Award-Thank-You-Note$ blog19.html [L]
+RewriteRule ^Microsoft-Surface-Hub-heralds-new-age-in-technology-for-collaboration$ blog20.html [L]
+RewriteRule ^Why-ISE-is-the-Mecca-for-Audiovisuals-Systems-Integrators$ blog21.html [L]
+RewriteRule ^O2K-Partners-with-Cisco-Webex-Rooms-to-create-Smarter-Offices$ blog22.html [L]
+RewriteRule ^O2K-partners-with-Sound-Control-Technology$ blog23.html [L]
+RewriteRule ^The-2020-Upgrade-your-office-needs-to-make$ blog24.html [L]
+RewriteRule ^Witnessing-the-Edge-of-AV-Revolution-at-InfoComm-2019$ blog25.html [L]
+RewriteRule ^Guide-to-Creating-the-Most-Advanced-Boardroom$ blog26.html [L]
+RewriteRule ^8-Mind-blowing-AV-Installations$ blog27.html [L]
+RewriteRule ^Step-into-the-Future-with-T1V-Visual-Collaboration-Solutions$ blog28.html [L]
+RewriteRule ^Experience-the-future-of-AV-integration-with-Crestron-DM-NVX$ blog29.html [L]
+RewriteRule ^Promote-Effective-Collaboration-with-O2K-Integrated-Meeting-Solutions$ blog30.html [L]
+RewriteRule ^Office-2000-Founders-Story$ blog31.html [L]
+RewriteRule ^O2K-partners-with-Amazon-Echo-for-a-seamless-office-experience$ blog32.html [L]
+RewriteRule ^O2K-offers-Kramer-Network-a-revolutionary-management-of-Pro-AV-Deployments$ blog33.html [L]
+RewriteRule ^Announcing-O2K-Partnership-with-Tripleplay$ blog34.html [L]
+RewriteRule ^O2K-Partners-with-Holosonics-for-a-Precise-Sound-Experience$ blog35.html [L]
+RewriteRule ^Mitsubishi-Narrow-Pixel-Pitch-Direct-View-LED-at-Infocomm$ blog36.html [L]
+RewriteRule ^Huddle-Rooms-The-Future-of-Board-Roomsy$ blog37.html [L]
+RewriteRule ^Beyond-Boundaries-O2K-Pioneers-a-New-Era-of-AV-Experiences-with-The-Beyonders-Centre$ blog38.html [L]
+RewriteRule ^5-Reasons-You-Need-Crestron-Sightline-in-Your-Workplace$ blog39.html [L]
+RewriteRule ^The-Real-Problem-with-Hybrid-Meetings-Isnt-Tech—It-the-Experience$ blog40.html [L]
+RewriteRule ^How-to-Choose-the-Right-AV-Setup-Start-with-Experience-Not-Specs$ blog41.html [L]
+RewriteRule ^Power-Failures-Cost-More-Than-You-Think-Heres-Why-Smart-Infrastructure-Matters-in-AV$ blog42.html [L]
+RewriteRule ^Designing-AV-Spaces-That-Evolve-How-O2K-Is-Reimagining-The-Beyonders-Centre$ blog43.html [L]
+
+
+
+Redirect  301 https://www.office-2000.com/index.html https://www.office-2000.com/Home
+Redirect  301 https://www.office-2000.com/index1.html https://www.office-2000.com/o2k
+Redirect 301 https://www.office-2000.com/whoweare.html https://www.office-2000.com/About-us
+Redirect 301 https://www.office-2000.com/beyonderscentre.html https://www.office-2000.com/Beyonders-centre
+Redirect 301 https://www.office-2000.com/crestron.html https://www.office-2000.com/Crestron-Sightline-Experience
+Redirect 301 https://www.office-2000.com/ourexpertise.html https://www.office-2000.com/Our-expertise
+Redirect 301 https://www.office-2000.com/casestudies.html https://www.office-2000.com/Case-studies
+Redirect 301 https://www.office-2000.com/news.html https://www.office-2000.com/News
+Redirect 301 https://www.office-2000.com/thank-you.html https://www.office-2000.com/Thank-you
+Redirect 301 https://www.office-2000.com/talktoourexpert.html https://www.office-2000.com/Talk-To-Our-Expert
+
+Redirect 301 https://www.office-2000.com/casestudies1.html https://www.office-2000.com/O2Ks-Innovative-AV-Solutions-for-TomTom-INAVATE-APAC-Award-Winner
+Redirect 301 https://www.office-2000.com/casestudies2.html https://www.office-2000.com/Elevating-Expectations-O2Ks-Success-in-Creating-Immersive-Lift-Experiences
+Redirect 301 https://www.office-2000.com/casestudies3.html https://www.office-2000.com/Meeting-Room-Overhaul-for-World-Renowned-IT-Consultant-Giant
+Redirect 301 https://www.office-2000.com/casestudies4.html https://www.office-2000.com/Saving-Lives-Beyond-Medicine-Towards-Meaningful-Patient-Care
+Redirect 301 https://www.office-2000.com/casestudies5.html https://www.office-2000.com/The-Beyonders-Centre-India-INACATE-APAC-Award-Winner
+Redirect 301 https://www.office-2000.com/gallery.html https://www.office-2000.com/Gallery
+Redirect 301 https://www.office-2000.com/ourpartners https://www.office-2000.com/Partners
+Redirect 301 https://www.office-2000.com/careers.html https://www.office-2000.com/Careers
+Redirect 301 https://www.office-2000.com/blogs.html https://www.office-2000.com/Office-2000-Blogs
+Redirect 301 https://www.office-2000.com/blogpg1.html https://www.office-2000.com/AV-Solutions-Blogs
+Redirect 301 https://www.office-2000.com/blogpg2.html https://www.office-2000.com/Audio-Visual-Blogs2
+Redirect 301 https://www.office-2000.com/contactus.html https://www.office-2000.com/Contact-us
+Redirect 301 https://www.office-2000.com/demobooking.html https://www.office-2000.com/Demo-booking
+Redirect 301 https://www.office-2000.com/affiliations.html https://www.office-2000.com/Affiliations
+Redirect 301 https://www.office-2000.com/vector.html https://www.office-2000.com/Vector-Power-Conditioner
+Redirect 301 https://www.office-2000.com/helpandsupport.html https://www.office-2000.com/Help-and-support
+Redirect 301 https://www.office-2000.com/privacypolicy.html https://www.office-2000.com/Privacy-policy
+Redirect 301 https://www.office-2000.com/technologyinnovations.html https://www.office-2000.com/Technology-innovations
+Redirect 301 https://www.office-2000.com/retailanddigitalsignage.html https://www.office-2000.com/Retail-digital-signage
+Redirect 301 https://www.office-2000.com/townhall.html https://www.office-2000.com/Townhall
+Redirect 301 https://www.office-2000.com/blog1.html https://www.office-2000.com/Top-Essential-Video-Solutions-for-Meeting-Rooms
+Redirect 301 https://www.office-2000.com/blog2.html https://www.office-2000.com/How-to-Maximize-Efficiency-In-Meeting-Rooms-with-AV-Technology
+Redirect 301 https://www.office-2000.com/blog3.html https://www.office-2000.com/The-Avolution-Unveiling-the-Impact-of-AI-on-Audio-Visual-Technologies
+Redirect 301 https://www.office-2000.com/blog4.html https://www.office-2000.com/Upgrade-Your-Meeting-Experience-A-Guide-to-the-Top-Microsoft-Teams-Rooms-Equipment
+Redirect 301 https://www.office-2000.com/blog5.html https://www.office-2000.com/5-MTR-Accessories-To-Enhance-Your-Meeting-Room-Experience
+Redirect 301 https://www.office-2000.com/blog6.html https://www.office-2000.com/4-Audio-Essentials-Every-Meeting-Room-Needs
+Redirect 301 https://www.office-2000.com/blog7.html https://www.office-2000.com/6-Must-haves-For-Successful-Hybrid-Meetings-with-Teams-Rooms
+Redirect 301 https://www.office-2000.com/blog8.html https://www.office-2000.com/Immerse-Into-Teams-Rooms-the-Effective-Hybrid-Meeting-Solution
+Redirect 301 https://www.office-2000.com/blog9.html https://www.office-2000.com/How-To-Drastically-Improve-your-Team-Meetings-with-O2K-and-Team-Rooms
+Redirect 301 https://www.office-2000.com/blog10.html https://www.office-2000.com/O2K-Definitive-Guide-to-Planning-Productive-Meetings-with-Microsoft
+Redirect 301 https://www.office-2000.com/blog11.html https://www.office-2000.com/Microsoft-Teams-Rooms-The-Hy-breed-Solution-to-Accomplish-More-at-Team-Meetings
+Redirect 301 https://www.office-2000.com/blog12.html https://www.office-2000.com/Corporate-Social-Responsibility-Project-by-O2K-for-Wesley-Higher-Secondary-School
+Redirect 301 https://www.office-2000.com/blog13.html https://www.office-2000.com/Learn-how-the-all-new-Samsung-Wall-can-elevate-your-meetings!
+Redirect 301 https://www.office-2000.com/blog14.html https://www.office-2000.com/Things-to-know-about-the-latest-Microsoft-Teams-Rooms
+Redirect 301 https://www.office-2000.com/blog15.html https://www.office-2000.com/Crestron-DM-NVX-AV-Over-IP-Series-Why-is-it-the-Future-in-AV-Integrations
+Redirect 301 https://www.office-2000.com/blog16.html https://www.office-2000.com/Everything-You-Need-To-Know-About-Taurus-UCX-The-Future-of-Meeting-Rooms
+Redirect 301 https://www.office-2000.com/blog17.html https://www.office-2000.com/Technology-meets-Innovation-as-GoBright-Promises-to-be-the-Future-of-Automation-in-Office-Spaces
+Redirect 301 https://www.office-2000.com/blog18.html https://www.office-2000.com/O2K-Partners-with-CYVIZ-to-elevate-Virtual-Collaboration-in-Workspace
+Redirect 301 https://www.office-2000.com/blog19.html https://www.office-2000.com/AVIXA-Women-in-AV-Award-Thank-You-Note
+Redirect 301 https://www.office-2000.com/blog20.html https://www.office-2000.com/Microsoft-Surface-Hub-heralds-new-age-in-technology-for-collaboration
+Redirect 301 https://www.office-2000.com/blog21.html https://www.office-2000.com/Why-ISE-is-the-Mecca-for-Audiovisuals-Systems-Integrators
+Redirect 301 https://www.office-2000.com/blog22.html https://www.office-2000.com/O2K-Partners-with-Cisco-Webex-Rooms-to-create-Smarter-Offices
+Redirect 301 https://www.office-2000.com/blog23.html https://www.office-2000.com/O2K-partners-with-Sound-Control-Technology
+Redirect 301 https://www.office-2000.com/blog24.html https://www.office-2000.com/The-2020-Upgrade-your-office-needs-to-make
+Redirect 301 https://www.office-2000.com/blog25.html https://www.office-2000.com/Witnessing-the-Edge-of-AV-Revolution-at-InfoComm-2019
+Redirect 301 https://www.office-2000.com/blog26.html https://www.office-2000.com/Guide-to-Creating-the-Most-Advanced-Boardroom
+Redirect 301 https://www.office-2000.com/blog27.html https://www.office-2000.com/8-Mind-blowing-AV-Installations
+Redirect 301 https://www.office-2000.com/blog28.html https://www.office-2000.com/Step-into-the-Future-with-T1V-Visual-Collaboration-Solutions
+Redirect 301 https://www.office-2000.com/blog29.html https://www.office-2000.com/Experience-the-future-of-AV-integration-with-Crestron-DM-NVX
+Redirect 301 https://www.office-2000.com/blog30.html https://www.office-2000.com/Promote-Effective-Collaboration-with-O2K-Integrated-Meeting-Solutions
+Redirect 301 https://www.office-2000.com/blog31.html https://www.office-2000.com/Office-2000-Founders-Story
+Redirect 301 https://www.office-2000.com/blog32.html https://www.office-2000.com/O2K-partners-with-Amazon-Echo-for-a-seamless-office-experience
+Redirect 301 https://www.office-2000.com/blog33.html https://www.office-2000.com/O2K-offers-Kramer-Network-a-revolutionary-management-of-Pro-AV-Deployments
+Redirect 301 https://www.office-2000.com/blog34.html https://www.office-2000.com/Announcing-O2K-Partnership-with-Tripleplay
+Redirect 301 https://www.office-2000.com/blog35.html https://www.office-2000.com/O2K-Partners-with-Holosonics-for-a-Precise-Sound-Experience
+Redirect 301 https://www.office-2000.com/blog36.html https://www.office-2000.com/Mitsubishi-Narrow-Pixel-Pitch-Direct-View-LED-at-Infocomm
+Redirect 301 https://www.office-2000.com/blog37.html https://www.office-2000.com/Huddle-Rooms-The-Future-of-Board-Roomsy
+Redirect 301 https://www.office-2000.com/blog38.html https://www.office-2000.com/Beyond-Boundaries-O2K-Pioneers-a-New-Era-of-AV-Experiences-with-The-Beyonders-Centre
+Redirect 301 https://www.office-2000.com/blog39.html https://www.office-2000.com/5-Reasons-You-Need-Crestron-Sightline-in-Your-Workplace
+Redirect 301 https://www.office-2000.com/blog40.html https://www.office-2000.com/The-Real-Problem-with-Hybrid-Meetings-Isnt-Tech—It-the-Experience
+Redirect 301 https://www.office-2000.com/blog41.html https://www.office-2000.com/How-to-Choose-the-Right-AV-Setup-Start-with-Experience-Not-Specs
+Redirect 301 https://www.office-2000.com/blog42.html https://www.office-2000.com/Power-Failures-Cost-More-Than-You-Think-Heres-Why-Smart-Infrastructure-Matters-in-AV
+Redirect 301 https://www.office-2000.com/blog43.html https://www.office-2000.com/Designing-AV-Spaces-That-Evolve-How-O2K-Is-Reimagining-The-Beyonders-Centre
+
+# Fallback: remove .html from URL if file exists
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php82” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php82 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

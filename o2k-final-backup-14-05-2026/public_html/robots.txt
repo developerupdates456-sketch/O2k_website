@@ -1,0 +1,33 @@
+# Googlebot-specific rules
+User-agent: Googlebot
+Allow: /
+Allow: /images/
+Allow: /slides/
+
+# Googlebot-Image for image indexing
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+
+# Block specific bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: AhrefsSiteAudit
+Disallow: /
+
+User-agent: BadBot
+Disallow: /
