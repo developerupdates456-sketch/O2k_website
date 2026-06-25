@@ -10,10 +10,10 @@ public_html/package-lock.json
 public_html/.htaccess
 public_html/cgi-bin/
 
-# Large media files (should be served from CDN/storage)
-# *.mp4
-# *.zip
-# *.rar
+# Large media files (served from external storage)
+*.mp4
+*.zip
+*.rar
 
 # OS files
 .DS_Store
