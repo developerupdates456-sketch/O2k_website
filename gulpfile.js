@@ -1,7 +1,6 @@
 const gulp = require('gulp');
 const babel = require('gulp-babel');
-const eslint = require('gulp-eslint');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
@@ -25,54 +24,84 @@ const banner = [
   '',
 ].join('\n');
 
-gulp.task('build-js', () => gulp
-  .src('public_html/src/js/timeline.js')
-  .pipe(plumber())
-  .pipe(eslint())
-  .pipe(eslint.format())
-  .pipe(eslint.failAfterError())
-  .pipe(babel({
-    presets: ['env'],
-  }))
-  .pipe(uglify())
-  .pipe(rename({ suffix: '.min' }))
-  .pipe(header(banner))
-  .pipe(gulp.dest('public_html/dist/js/'))
-  .pipe(livereload()));
+gulp.task('build-js', () => {
+  return gulp
+    .src('public_html/src/js/timeline.js')
+    .pipe(plumber())
+    .pipe(
+      babel({
+        presets: ['@babel/preset-env'],
+      })
+    )
+    .pipe(uglify())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(header(banner))
+    .pipe(gulp.dest('public_html/dist/js/'))
+    .pipe(livereload());
+});
 
 gulp.task('build-css', () => {
   const processors = [
-    cssnext({ browsers: ['last 5 versions'] }),
+    cssnext({
+      browsers: ['last 5 versions'],
+    }),
     pxtorem({
-      propWhiteList: ['font-size', 'padding', 'line-height', 'letter-spacing', 'margin'],
+      propWhiteList: [
+        'font-size',
+        'padding',
+        'line-height',
+        'letter-spacing',
+        'margin',
+      ],
       mediaQuery: true,
       replace: true,
     }),
     reporter({
-      clearMessages: true
-    })
+      clearMessages: true,
+    }),
   ];
 
   return gulp
     .src('public_html/src/scss/timeline.scss')
     .pipe(plumber())
-    .pipe(sass())
-    .pipe(postcss(processors), { syntax: syntaxScss })
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss(processors))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cleanCSS())
     .pipe(gulp.dest('public_html/dist/css/'))
     .pipe(livereload());
 });
 
-gulp.task('images', () => gulp
-  .src('public_html/src/images/**')
-  .pipe(imagemin())
-  .pipe(gulp.dest('public_html/dist/images'))
-  .pipe(livereload()));
+gulp.task('images', () => {
+  return gulp
+    .src('public_html/src/images/**')
+    .pipe(imagemin())
+    .pipe(gulp.dest('public_html/dist/images'))
+    .pipe(livereload());
+});
 
 gulp.task('watch', () => {
   livereload.listen();
-  gulp.watch('public_html/src/scss/*.scss', gulp.series('build-css'));
-  gulp.watch('public_html/src/images/**', gulp.series('images'));
-  gulp.watch('public_html/src/js/timeline.js', gulp.series('build-js'));
+
+  gulp.watch(
+    'public_html/src/scss/**/*.scss',
+    gulp.series('build-css')
+  );
+
+  gulp.watch(
+    'public_html/src/images/**',
+    gulp.series('images')
+  );
+
+  gulp.watch(
+    'public_html/src/js/**/*.js',
+    gulp.series('build-js')
+  );
 });
+
+gulp.task(
+  'default',
+  gulp.series(
+    gulp.parallel('build-js', 'build-css', 'images')
+  )
+);
