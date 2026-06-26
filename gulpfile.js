@@ -26,7 +26,7 @@ const banner = [
 ].join('\n');
 
 gulp.task('build-js', () => gulp
-  .src('src/js/timeline.js')
+  .src('public_html/src/js/timeline.js')
   .pipe(plumber())
   .pipe(eslint())
   .pipe(eslint.format())
@@ -37,7 +37,7 @@ gulp.task('build-js', () => gulp
   .pipe(uglify())
   .pipe(rename({ suffix: '.min' }))
   .pipe(header(banner))
-  .pipe(gulp.dest('dist/js/'))
+  .pipe(gulp.dest('public_html/dist/js/'))
   .pipe(livereload()));
 
 gulp.task('build-css', () => {
@@ -54,25 +54,25 @@ gulp.task('build-css', () => {
   ];
 
   return gulp
-    .src('src/scss/timeline.scss')
+    .src('public_html/src/scss/timeline.scss')
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss(processors), { syntax: syntaxScss })
     .pipe(rename({ suffix: '.min' }))
     .pipe(cleanCSS())
-    .pipe(gulp.dest('dist/css/'))
+    .pipe(gulp.dest('public_html/dist/css/'))
     .pipe(livereload());
 });
 
 gulp.task('images', () => gulp
-  .src('src/images/**')
+  .src('public_html/src/images/**')
   .pipe(imagemin())
-  .pipe(gulp.dest('dist/images'))
+  .pipe(gulp.dest('public_html/dist/images'))
   .pipe(livereload()));
 
 gulp.task('watch', () => {
   livereload.listen();
-  gulp.watch('src/scss/*.scss', gulp.series('build-css'));
-  gulp.watch('src/images/**', gulp.series('images'));
-  gulp.watch('src/js/timeline.js', gulp.series('build-js'));
+  gulp.watch('public_html/src/scss/*.scss', gulp.series('build-css'));
+  gulp.watch('public_html/src/images/**', gulp.series('images'));
+  gulp.watch('public_html/src/js/timeline.js', gulp.series('build-js'));
 });
